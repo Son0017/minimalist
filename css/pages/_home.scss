@@ -1,0 +1,164 @@
+.aboutMe {
+  margin-bottom: 9.6rem;
+  &__container {
+    height: 60rem;
+    position: relative;
+    background-image: url(../images/jpg/aboutMeBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include responsive(xl-tablet) {
+      background-image: url(../images/jpg/XlAboutMe.png);
+    }
+    @include responsive(xl-phone) {
+      background-image: url(../images/jpg/PhoneAboutMe@2x.jpg);
+      background-size: contain;
+    }
+    @include responsive(m-tablet) {
+      padding: 0;
+      background-size: 311px 271px;
+      background-position: top;
+    }
+  }
+  &__title {
+    background-color: $color-bg;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding-right: 5.6rem;
+    padding-top: 5.6rem;
+    @include responsive(m-tablet) {
+      padding: 0;
+    }
+    div {
+      max-width: 39rem;
+      @include responsive(xl-tablet) {
+        max-width: 45.8rem;
+        margin-bottom: 4.8rem;
+      }
+      margin-bottom: 5.3rem;
+    }
+    @include responsive(m-tablet) {
+      padding: 0;
+      background-color: inherit;
+    }
+  }
+  &__link {
+    display: flex;
+    background-color: $color-dark;
+    align-items: center;
+    width: 20rem;
+    text-align: center;
+    // padding: 1.7rem 0;
+    i {
+      display: flex;
+    }
+    span {
+      width: 15.2rem;
+      color: #ffffff;
+    }
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+}
+.descMe {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+  }
+  .btn {
+    width: 21rem;
+  }
+  //   margin-bottom: 9.6rem;
+  @include responsive(xl-tablet) {
+    .img {
+      //   overflow: hidden;
+      width: 281px;
+      //   height: ;
+      img {
+        display: none;
+        // object-position: 70% 50%;
+      }
+      background-image: url(../images/jpg/Xl-tablet.jpg);
+      background-repeat: no-repeat;
+    }
+  }
+  @include responsive(xl-phone) {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .img {
+      img {
+        display: inline;
+        width: 100%;
+        height: auto;
+      }
+      margin-bottom: 3.2rem;
+      background-image: url();
+    }
+  }
+  &__title {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+      margin-bottom: 2.8rem;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 30px;
+      margin-bottom: 2.4rem;
+    }
+    .btn {
+      display: flex;
+      margin-bottom: 4.5rem;
+    }
+    max-width: 35rem;
+    @include responsive(xl-phone) {
+      margin-left: 0;
+      hr {
+        margin-bottom: 3.1rem;
+      }
+      .btn {
+        margin-bottom: 4.9rem;
+      }
+    }
+  }
+}
+.contactMe {
+  margin: 15rem 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    position: relative;
+  }
+  hr {
+    flex-grow: 1;
+  }
+
+  &__title {
+    max-width: 35rem;
+  }
+  .btn {
+    width: 16.9rem;
+  }
+  @include responsive(xl-phone) {
+    margin: 9.6rem 0;
+    .container {
+      flex-direction: column;
+      text-align: center;
+      gap: 4rem;
+    }
+    hr {
+      display: none;
+    }
+  }
+}

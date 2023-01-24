@@ -1,0 +1,27 @@
+.portfolio-pa {
+  flex-direction: row-reverse;
+}
+.p-main {
+  margin-bottom: 8rem;
+}
+.portfolio {
+  margin-top: 4rem;
+  .btn {
+    width: 18rem;
+  }
+  @include responsive(xl-tablet) {
+    .img {
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      img {
+        display: inline;
+        width: 339px;
+        height: 341px;
+      }
+      background-image: url();
+    }
+  }
+}

@@ -1,0 +1,23 @@
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 1.7rem 3.4rem;
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid $btn-Pcolor;
+  color: $color-dark-blue;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $btn-Pcolor;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,42 @@
+.footer {
+  padding: 2.4rem 0;
+  background-color: $color-dark-blue;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav {
+    gap: 4.8rem;
+  }
+  a {
+    &:hover svg path {
+      fill: $color-primary;
+    }
+  }
+  &__link {
+    color: #ffffff;
+  }
+  &__messenger {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    a {
+      display: flex;
+    }
+  }
+  @include responsive(xl-phone) {
+    .container {
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+  @include responsive(m-tablet) {
+    &__navbar {
+      flex-direction: column;
+    }
+    nav {
+      flex-direction: column;
+    }
+  }
+}

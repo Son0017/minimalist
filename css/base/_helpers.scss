@@ -1,0 +1,20 @@
+.hidden {
+  //   display: block;
+  transition: all 0.3s;
+  @include responsive(m-tablet) {
+    // height: 0;
+    opacity: 1;
+    // transform: translate(256px);
+    // padding: 0;
+  }
+}
+.toggle-hidden {
+  display: none;
+  @include responsive(m-tablet) {
+    display: block;
+  }
+}
+.invalid {
+  border: 1px solid red;
+  color: red;
+}
